@@ -1,0 +1,62 @@
+<meta name="viewport" content="width=device-width, initial-scale=2.0">
+<body>
+    <!-- Dropdown to select the country code -->
+    <label for="countryCode">Choose Country:</label>
+    <select id="countryCode">
+        <option value="54">Argentina (+54)</option>
+		<option value="43">Austria (+43)</option>
+		<option value="61">Australia (+61)</option>
+		<option value="591">Bolivia (+591)</option>
+		<option value="55">Brazil (+55)</option>
+		<option value="1">Canada (+1)</option>
+		<option value="86">China (+86)</option>
+		<option value="56">Chile (+56)</option>
+		<option value="57">Colombia (+57)</option>
+		<option value="45">Denmark (+45)</option>
+		<option value="593">Ecuador (+593)</option>
+		<option value="358">Finland (+358)</option>
+		<option value="33">France (+33)</option>
+		<option value="49">Germany (+49)</option>
+		<option value="30">Greece (+30)</option>
+		<option value="91">India (+91)</option>
+		<option value="62">Indonesia (+62)</option>
+		<option value="39">Italy (+39)</option>
+		<option value="81">Japan (+81)</option>
+		<option value="47">Norway (+47)</option>
+		<option value="31">Netherlands (+31)</option>
+		<option value="64">New Zealand (+64)</option>
+		<option value="505">Nicaragua (+505)</option>
+		<option value="52">Mexico (+52)</option>
+		<option value="48">Poland (+48)</option>
+		<option value="351">Portugal (+351)</option>
+		<option value="40">Romania (+40)</option>
+		<option value="7">Russia (+7)</option>
+		<option value="34">Spain (+34)</option>
+		<option value="46">Sweden (+46)</option>
+		<option value="27">South Africa (+27)</option>
+		<option value="66">Thailand (+66)</option>
+		<option value="84">Vietnam (+84)</option>
+		<option value="58">Venezuela (+58)</option>
+		<option value="44">United Kingdom (+44)</option>
+		<option value="971">United Arab Emirates (+971)</option>
+		<option value="1">United States (+1)</option>
+		<option value="90">Turkey (+90)</option>
+    </select>
+    <br><br>
+
+    <!-- Input for phone number -->
+    <label for="text">Phone Number:</label>
+    <input type="text" id="text" />
+    <br><br>
+
+    <!-- Button to open WhatsApp -->
+    <input type="button" id="btn" value="Whatsapp" onClick="openWhatsApp()" />
+
+    <script>
+        function openWhatsApp() {
+            const countryCode = document.getElementById('countryCode').value;
+            const phoneNumber = document.getElementById('text').value;
+            window.open('https://api.whatsapp.com/send?phone=' + countryCode + phoneNumber);
+        }
+    </script>
+</body>
