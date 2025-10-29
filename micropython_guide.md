@@ -1,8 +1,8 @@
 # Micropython Setup Guide
 ### _With aliases for easier reusability_
 ### venv and dir creation
-mkdir esp01
 ```
+mkdir esp01
 cd esp01
 alias VENV_ACTIVATE="source .venvlin/bin/activate"
 alias VENV_CREATE="python -m venv .venvlin"
