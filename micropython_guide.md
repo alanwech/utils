@@ -2,11 +2,10 @@
 ### _With aliases for easier reusability_
 ### venv and dir creation
 ```
-mkdir esp01
-cd esp01
+mkdir esp01; cd esp01
 alias VENV_ACTIVATE="source .venvlin/bin/activate"
 alias VENV_CREATE="python -m venv .venvlin"
-pip install esptool
+VENV_CREATE; VENV_ACTIVATE; pip install esptool
 ```
 ### First comm
 ```sudo usermod -aG dialout $USER```
