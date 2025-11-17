@@ -1,0 +1,11 @@
+alias goliat_gunicorn="gunicorn --reload --workers 2 main:apigw"
+alias goliat_flask="flask --debug --port 8000 --app main run"
+alias k="kubectl"
+alias d="docker"
+alias ZSHCONFIG="nano ~/.zshrc"
+alias VENV_ACTIVATE="source .venvlin/bin/activate"
+alias VENV_CREATE="python -m venv .venvlin"
+alias VENV12_CREATE="python3.12 -m venv .venvlin"
+alias TEST_PYTEST="python -m pytest -W ignore -sv" # add test file or folder
+alias ESP_REPL="mpremote connect /dev/ttyUSB0 repl"
+alias ESP_CP="mpremote connect /dev/ttyUSB0 fs cp main.py :"
